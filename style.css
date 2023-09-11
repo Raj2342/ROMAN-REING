@@ -1,0 +1,350 @@
+
+ body{
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+ }
+ .navbar-shift{
+    margin-top: 50px;
+ }
+
+.navbar-brand img{
+    height: 500px;
+    width: 200px;
+}
+
+
+.social-media{
+     display: flex;
+    gap: 20%;
+}
+
+.d-block{
+     width: 100%; 
+}
+.carousel-inner{
+    width: 100%;
+    height: 700px;
+    
+}
+
+.carousel{
+    margin-top: 0rem;
+}
+
+/* common */
+
+.common-heading{
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.01rem;
+}
+.common-title {
+    margin-top: 5rem;
+    display: flex;
+    margin-left: 600px;
+    gap: 30%;
+}
+
+.icon-span{
+    width:2.5rem;
+    height: 2.5rem;
+    background-color: rgb(16, 135, 239);
+    color: white;
+ }
+
+   /* generate card during hover  */
+ .card-box:hover{
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px ;
+ }
+
+ /* .gap-2{
+    margin-top: -8rem;
+ } */
+
+ /* <!-- swing animated  counter --> */
+ .sectio-work-data{
+    background-color: rgb(238, 240, 247);
+    margin-top: 7%;
+    height: 30vh;
+    
+ }
+
+ .animated-counter{
+    display: flex;
+    gap: 20%;
+    margin-left: 7%;
+    
+}
+
+.animation{
+    margin-top: 3%;
+    display: grid;
+    gap: 20px;
+}
+
+/* image-slide  */
+#middle-menu{
+    margin-left: 1rem;
+}
+
+#side-bars i{
+    margin-left: -80px ;
+    font-size: 30px;
+    
+
+}
+
+.navbar-brand img{
+    height: 100px;
+    width: 100px;
+    margin-left: -30px;
+}
+
+
+
+
+/*  modal */
+.modal-body{
+    list-style: none;
+    
+}
+
+.modal-dialog{
+    margin: 0;
+    width: 430px;
+
+}
+
+.animation i{
+    font-size: 50px;
+}
+
+
+
+
+/* hiding navbar  */
+@media screen and  (max-width:990px) {
+    #navigation-bar {
+        display: none;
+    }
+    .modal-dialog{
+        width: 300px;
+    }
+    .modal-content{
+        border-radius: 0;
+        height: 100vh;
+        overflow-y: scroll;
+        background-color: #102447;
+        color: white;
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 88%;
+        margin: 0 auto;
+        padding-bottom: 16px;
+        border-bottom: 2px solid white;
+    }
+
+    .modal-header button{
+        background-color: #fff ;
+        color: white;
+        font-size: 30px;
+    }
+
+    .modal-body  .nav-link{
+        width: 100%;
+        margin: 0 auto;
+        padding: 75px 0 0 0;
+        flex: unset;
+        border-bottom: 2px  solid   white;
+        transition: all .5s  ease;
+    }
+
+    .modal-body  .nav-link:hover{
+      color: aqua;
+    }
+
+
+
+    .nav-link{
+        font-size: 17px;
+        font-weight: 500;
+        letter-spacing: 2.5px;
+
+    }
+
+    .nav-link  i{
+      font-size: 30px;
+      margin-right: 15px;
+      padding: 0 0  10px 10px;
+    }
+
+    .mobile-modal-footer{
+        width: 87%;
+        margin: 0 auto;
+        padding: 20% 0 ;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 25px;
+
+        
+        
+
+    }
+
+    .carousel-inner{
+        width: 100%;
+        height: 500px;
+        
+        
+    }
+    
+    .carousel{
+        margin-top: 0rem;
+        margin-left: 20rem;
+    }
+    /* service section-heading   */
+    .common-heading{
+        font-size: 2.8rem;
+        font-weight: 500;
+        letter-spacing: 0.01rem;
+    }
+    .common-title {
+        margin-top: 5rem;
+        display: flex;
+        margin-left: 200px;
+        gap: 10%;
+    }
+    /* acheivemnet-logo */
+    #achiev-logo{
+        display: none;
+    }
+
+    /* card */
+   .card-gap{
+       display: grid;
+       gap: 8rem;
+   }
+
+   /* founder */
+   #founder-margin-img{
+    margin-left: -300px;
+   }
+
+   #founder-main{
+    gap: 30%;
+   }
+
+           /* <!-- swing animated  counter --> */
+ .sectio-work-data{
+    background-color: rgb(238, 240, 247);
+    margin-top: 7%;
+    height: 30vh;
+    
+ }
+
+ .animated-counter{
+    display: flex;
+    gap: 10%;
+    margin-left: 7%;
+    
+}
+
+.animation{
+    margin-top: 5%;
+}
+
+  /* end- of media query  */
+}
+  /* very-small devices  */
+/* 2nd media query  */
+@media screen and (max-width:665px) {
+    .common-title {
+        margin-top: 5rem;
+        display: flex;
+        margin-left: 70px;
+        gap: 10%;
+    }
+
+    #achiev-logo{
+        display: none;
+    }
+
+
+       /* founder */
+   #founder-margin-img{
+    margin-left: -300px;
+   }
+
+   #founder-main{
+    gap: 40%;
+   }
+
+           /* <!-- swing animated  counter --> */
+ .sectio-work-data{
+    background-color: rgb(238, 240, 247);
+    margin-top: 7%;
+    height: 30vh;
+    
+ }
+
+ .animated-counter{
+    display: flex;
+    gap: 8%;
+    margin-left: 7%;
+    
+}
+
+.animation{
+    margin-top: 5%;
+}
+}
+
+
+/* very large devices  */
+@media screen and (min-width:975px ) and (max-width:1519px) {
+    .common-title {
+        margin-top: 5rem;
+        display: flex;
+        margin-left: 500px;
+        gap: 10%;
+    }
+
+    #founder-margin-img{
+        margin-left: -300px;
+       }
+    
+       #founder-main{
+        gap: 10%;
+       }
+
+
+        /* <!-- swing animated  counter --> */
+ .sectio-work-data{
+    background-color: rgb(238, 240, 247);
+    margin-top: 7%;
+    height: 30vh;
+    
+ }
+
+ .animated-counter{
+    display: flex;
+    gap: 15%;
+    margin-left: 7%;
+    
+}
+
+.animation{
+    margin-top: 5%;
+}
+
+
+
+}
+
+

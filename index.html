@@ -1,0 +1,732 @@
+<!doctype html>
+<html lang="en"  style=" align-items: center; justify-content: center; margin: auto;">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> TISSUE CULTURE  LABORATORY  </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- jquery for counter  -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js" > </script>
+
+    <style>
+
+      footer{
+        height: 500px;
+      }
+      .Copyright{
+        margin-top: 250px;
+      }
+    </style>
+  </head>
+  <body>
+      <!-- alert box -->
+    <div class="alert alert-danger" role="alert">
+       Exciting News! किसान भाइयों आलू की बुकिंग शुरू हो गई है। आलू की बंपर पैदावार के लिए अभी बुक करें.
+       <i class="fa-solid fa-phone fa-shake"></i> संपर्क करें - 9198516750 / 7652006949 
+    </div>
+  
+        
+    
+    <!-- nav-bar start  -                   remove fixed top-->
+        <nav class="navbar  navbar-expand-lg   fixed-top  navbar-dark  p-md-3   d-lg-block   d-sm-none   d-md-none"  id="navigation-bar">
+          <div class="container-fluid  navbar-shift">
+          
+            <a class="navbar-brand " href="./index.html">
+              <img src="./image/logo(4).png"
+                 />
+            </a>
+           
+          
+            
+            <ul class="nav justify-content-center  align-item-center" id="middle-menu">
+                <!-- 1st -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Resources
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./blog.html">Recent Activitys</a></li>
+                  <li><a class="dropdown-item" href="./gallery.html">Gallary</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <!-- <li><a class="dropdown-item" href="#">labroutry</a></li> -->
+                </ul>
+              </li>
+            
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="./products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  products
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">kufri mohan</a></li>
+                  <li><a class="dropdown-item" href="#">kufri sohan</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">kufro rajan</a></li>
+                </ul>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link " aria-disabled="true" href="./products.html">Products</a>
+              </li>
+    
+              <li class="nav-item">
+                <a class="nav-link " aria-disabled="true" href="./about.html">About us</a>
+              </li>
+            </ul>
+            <!-- pre-end-menu -->
+            <a href="./contect.html">
+              
+              <button type="button" class="btn btn-primary  btn-outline-light">contect us</button>
+            </a>
+
+            
+          </div>
+        </nav>
+       
+       
+      <!-- nav-bar end -->
+           
+            <!-- side-bar -->
+            <!-- <div class="mobile-toggler  d-lg-none d-md-block  d-sm-block">
+               <a href="#"  data-bs-toggle="modal"  data-bs-target="#exampleModal">
+                <i class="fa-solid fa-bars"></i>
+               </a>
+            </div> -->
+
+              
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+ <!-- second-navbar-mobile navbar -->
+ <nav class="navbar bg-body-tertiary bg-dark  d-lg-none d-md-block  d-sm-block">
+  <div class="container">
+     <!-- logo -->
+     <a class="logo" href="./index.html">
+      <img src="./image/logo(4).png"
+        height="100px" />
+    </a>
+     <!-- side-bar -->
+            <div class="mobile-toggler  d-lg-none d-md-block  d-sm-block">
+               <a href="#" id="side-bars" data-bs-toggle="modal"  data-bs-target="#exampleModal">
+                <i class="fa-solid fa-bars"></i>
+               </a>
+            </div>
+
+       <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Menu</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+         <!-- insde- content  -->
+         <li class="nav-item">
+          
+         <a class="nav-link " aria-disabled="true" href="./index.html">
+           <i class="fa-solid fa-house"> </i> Home
+         </a>
+        
+        </li>
+       
+       
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <i class="fa-solid fa-clipboard"></i>  Resources
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="./blog.html">Recent Activity </a></li>
+            <li><a class="dropdown-item" href="./gallery.html">Gallary</a></li>
+            
+          </ul>
+        </li>
+
+       
+
+        <li class="nav-item">
+          <a class="nav-link " aria-disabled="true" href="./products.html">
+            <i class="fa-solid fa-cart-shopping" ></i> Products</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link " aria-disabled="true" href="./about.html">
+            <i class="fa-solid fa-user"></i> About us</a>
+        </li>
+
+
+
+      </div>
+      <div class="mobile-modal-footer">
+       <a href="https://www.facebook.com/rahul.pal.9085790?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+       <a href="https://instagram.com/rahul.pal.9085790?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+       <a href="https://youtu.be/WrjufoWbLSQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+       <a href="#" target="_blank"><i class="fa-solid fa-truck-fast"></i></a>
+        
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+
+      </div>
+    </div>
+  </div>
+</div>    
+
+  </div>
+</nav>
+          
+
+
+
+        
+   
+
+   <!-- crousel-start -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-left: -200px;">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./image/none3.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item active">
+          <img src="./image/rahul-6.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/Rahul-2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/rahul-10.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./image/rahul-13.png" class="d-block w-100" alt="...">
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    
+    
+
+    <!-- crausel-end -->
+
+
+    
+    <!-- service-section -->
+    <section  class="service-section">
+         <div class="container  text-center  fw-bold  common-title  ">
+          <h2 class="common-heading">Our Products
+            <hr>
+          </h2>
+          
+          <!-- <hr class="w-25  mx-auto"> -->
+         
+         <!-- right-side -->
+         <div>
+          <a href="./products.html">
+         <button class="btn btn-primary me-md-2  mb-9" type="button">view all</button>
+         </a>
+        </div>
+
+      </div>
+    </section>
+      
+    <!-- our-products  -->
+       <!-- card-1 -->
+    <div class="container mt-5">
+      <div class="row  card-gap">
+        <!-- card-1 -->
+        <div  class="col-12  col-lg-4  col-md-12  col-sm-12">
+           <div class="  text-center  card-box  ">
+            <img src="./image/product-1.jpg" class="img-fluid"  width="500px"  >
+
+            <h5  class="my-3   fw-normal">Kufri Chipsona 3 Potato </h5>
+           <P>it has white cream, ovoid tubers with shallow eyes and white flesh. Its canopy is semi-compact and stem green with red-brown pigment only at base. Leaflet is ovate-lanceolate, flowers are white and sprouts red-purple.</P>
+           
+
+            <div  class="d-flex justify-content-center align-item-center">
+              <a href="#" class="icon-span   rounded-circle   d-flex   justify-content-center   align-item-center  ">3
+                <i class="fa-solid fa-arrow-right" style="color: #dde1e7;"></i>
+              </a>
+             </div> 
+
+
+           </div>
+         </div>
+
+         <!-- card-2 -->
+        <div  class="col-12  col-lg-4  col-md-12">
+          <div class="  text-center  card-box rounded-2  p-5 shadow ">
+           <img src="./image/product-2.jpg" class="img-fluid"  width="600px">
+
+           <h5  class="my-3   fw-normal">Kufri Chandramukhi Potato </h5>
+         <p>It is an early variety and matures in about 80-90 days. Its tuber is white, large, smooth, oval and flattened, with white skin, fleet eyes and white flesh. The tubers, though up-to-date type, are smoother, more uniform and more attractive.</p>
+           
+
+           <div  class="d-flex justify-content-center align-item-center">
+             <a href="#" class="icon-span   rounded-circle   d-flex   justify-content-center   align-item-center  ">
+               <i class="fa-solid fa-arrow-right" style="color: #dde1e7;"></i>
+             </a>
+            </div> 
+
+
+          </div>
+        </div>
+           <!-- card-3 -->
+        <div  class="col-12  col-lg-4  col-md-12">
+          <div class="  text-center  card-box  ">
+           <img src="./image/product-3.jpg" class="img-fluid"  width="500px">
+
+           <h5  class="my-3   fw-normal">KUFRI SURYA </h5>
+          <p>Kufri Surya is an early maturing, heat tolerant and hopper-burn resistant potato variety with oblong tubers, white smooth skin and pale yellow flesh. This variety is meant for early (September) planting in north-western plains and for rabi and kharif plantings in peninsular India.</p> 
+         
+
+           <div  class="d-flex justify-content-center align-item-center">
+             <a href="#" class="icon-span   rounded-circle   d-flex   justify-content-center   align-item-center  ">
+               <i class="fa-solid fa-arrow-right" style="color: #dde1e7;"></i>
+             </a>
+            </div> 
+
+
+          </div>
+        </div>
+        
+        
+        <!-- end of row  -->
+      </div>
+
+    </div>
+    
+
+
+      <!-- swing animated  counter -->
+       <section class=" section  sectio-work-data " style="background-color: black; color: white;">
+         <div class=" animated-counter">
+           
+           <div class="animation">
+            <i class="fa-solid fa-mug-saucer"></i>
+            <h2 class="counter-number"  class="counter">2000+</h2>
+            <p>project completed </p>
+           </div>
+
+           <div  class="animation">
+            <i class="fa-solid fa-car  font"></i>
+            <h2 class="counter-number"  class="counter">6000+</h2>
+            <p>happy client </p>
+           </div>
+
+           <div   class="animation">
+            <i class="fa-solid fa-truck"></i>
+            <h2 class="counter-number"  class="counter">5000+</h2>
+            <p> cup of cofee </p>
+           </div>
+
+           <div   class="animation">
+            <i class="fa-solid fa-compass"></i>
+            <h2 class="counter-number"  class="counter">8000+</h2>
+            <p> real problem solved </p>
+           </div>
+         </div>
+
+      </section>
+     
+
+   </div>
+ </section>
+
+
+    <!-- quotes/founder  -->
+    <div class="card mb-3  shadow" style="max-width: 100%; " >
+      <div class="row g-0     " id="founder-main">
+        <div class="col-md-6    col-sm-8"  id="founder-margin-img">
+          <img src="./image/founder-img-removebg-preview (1).png" class="img-fluid rounded-start" style="margin-left: 20rem;">
+        </div>
+        <div class="col-md-6    col-sm-4">
+          <div class="card-body">
+            <h5 class="card-title" style="margin-top: 2rem;" > Mr. Rahul Pal  </h5>
+            <p class="card-text"><small class="text-body-secondary "  > <span style="color: rgb(234, 120, 6);">  Founder </span></small></p>
+            <p class="card-text">"The biggest risk is not to take any risk. In a world that is changing quickly, the only strategy that is guaranteed to fail is not taking risks." </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!-- service-section-2 -->
+  <section  class="service-section">
+    <div class="container  text-center  fw-bold  common-title  ">
+     <h2 class="common-heading">THE LATEST <hr>
+     </h2>
+     
+     <!-- <hr class="w-25  mx-auto"> -->
+    
+    <!-- right-side -->
+    <div>
+      <a href="./blog.html">
+
+        <button class="btn btn-primary me-md-2  mb-9" type="button">view all</button>
+      </a>
+   </div>
+
+ </div>
+</section>
+    
+
+
+ <!-- BLOG/ THE LATEST  -->
+       <!-- card-1 -->
+       <div class="container mt-5">
+        <div class="row  card-gap">
+          <!-- card-1 -->
+          <div  class="col-12  col-lg-4  col-md-12">
+             <div class="  text-center  card-box  ">
+              <img src="./image/img-pdf/new-8.png" class="img-fluid"  width="500px">
+  
+              <h5  class="my-3   fw-normal">सीडीओ मैम निरीक्षण करते हुए </h5>
+  
+              <p  class="mb-5"> 
+                मुख्य विकास अधिकारी / सीडीओ मैम , मुख्य जिला अधिकारी (सीडीओ) अधिकारी द्वारा हमारी कंपनी के हालिया निरीक्षण के बाद हमें जो प्रशंसाएं मिली हैं, उन्हें साझा करते हुए हमें खुशी हो रही है। उनकी यात्रा हमारे लिए उत्कृष्टता के प्रति अपना समर्पण और शीर्ष स्तर के उत्पाद/सेवाएं प्रदान करने की प्रतिबद्धता प्रदर्शित करने का एक शानदार अवसर थी।
+
+                हमारी टीम द्वारा किये गये उल्लेखनीय कार्य से सीडीओ अधिकारी अत्यधिक प्रभावित हुए। उन्होंने विशेष रूप से हमारी कुशल प्रक्रियाओं, नवीन दृष्टिकोणों और हमारी पेशकशों की उच्च गुणवत्ता पर प्रकाश डाला। उनकी सकारात्मक प्रतिक्रिया हमारे मिशन में हमारे विश्वास की पुष्टि करती है और हमें लगातार स्तर ऊपर उठाने के लिए प्रेरित करती है।
+              
+                
+                अधिक रोमांचक घटनाओं के लिए हमारे साथ बने रहें क्योंकि हम बड़ी उपलब्धियों की ओर अपनी यात्रा जारी रख रहे हैं!
+
+              </p>
+  
+              <div  class="d-flex justify-content-center align-item-center">
+                <a href="#" class="icon-span   rounded-circle   d-flex   justify-content-center   align-item-center  ">
+                  <i class="fa-solid fa-arrow-right" style="color: #dde1e7;"></i>
+                </a>
+               </div> 
+  
+  
+             </div>
+           </div>
+  
+           <!-- card-2 -->
+          <div  class="col-12  col-lg-4  col-md-12">
+            <div class="  text-center  card-box rounded-2  p-5 shadow ">
+             <img src="./image/achie-1.jpg" class="img-fluid"  width="500px">
+  
+             <h5  class="my-3   fw-normal">राहुल पाल ने फरुखाबाद जिले में कृषि क्षेत्र में प्रथम श्रेणी हासिल की है। </h5>
+  
+             <p  class="mb-5">हम कुछ सचमुच प्रेरणादायक समाचार साझा करने के लिए रोमांचित हैं, जिसने हमारे समुदाय को बहुत गौरवान्वित किया है। एक समर्पित और मेहनती व्यक्ति, राहुल पाल ने कृषि के क्षेत्र में एक महत्वपूर्ण उपलब्धि हासिल की है, जिसने फरुखबाद जिले में प्रतिष्ठित प्रथम श्रेणी हासिल की है।
+              राहुल के उत्कृष्ट प्रदर्शन के लिए उन्हें 7000 रुपये का पुरस्कार दिया गया है। यह कीमत उनकी उल्लेखनीय उपलब्धियों के लिए स्वीकृति का प्रतीक है और कृषि के क्षेत्र में उत्कृष्टता के उनके प्रयास को जारी रखने के लिए प्रोत्साहन का संकेत है।
+             </p>
+  
+             <div  class="d-flex justify-content-center align-item-center">
+               <a href="#" class="icon-span   rounded-circle   d-flex   justify-content-center   align-item-center  ">
+                 <i class="fa-solid fa-arrow-right" style="color: #dde1e7;"></i>
+               </a>
+              </div> 
+  
+  
+            </div>
+          </div>
+             <!-- card-3 -->
+          <div  class="col-12  col-lg-4  col-md-12">
+            <div class="  text-center  card-box  ">
+             <img src="./image/judje-inspection.png" class="img-fluid"  width="500px">
+  
+             <h5  class="my-3   fw-normal">जज साहब निरीक्षण करते हुए </h5>
+  
+             <p  class="mb-5">न्यायाधीश का निरीक्षण हमारे लिए समर्पण, कड़ी मेहनत और नवाचार को प्रदर्शित करने का एक अवसर था जो हमारी बीज कृषि कंपनी को संचालित करता है। हमें आपको यह बताते हुए बेहद गर्व हो रहा है कि न्यायाधीश हमारे संचालन, प्रथाओं और हमारे उत्पादों की गुणवत्ता से पूरी तरह प्रभावित हुए।
+              न्यायाधीश ने विशेष रूप से उच्च गुणवत्ता वाले बीज पैदा करने के प्रति हमारे अटूट समर्पण पर प्रकाश डाला जो न केवल मजबूत और स्वस्थ हैं बल्कि कृषि के सतत विकास में भी योगदान देते हैं। यह मान्यता सफल पैदावार और समृद्ध कृषि परिदृश्य सुनिश्चित करने के लिए किसानों को सर्वोत्तम संभव उपकरण प्रदान करने की हमारी प्रतिबद्धता को रेखांकित करती है।
+             </p>
+  
+             <div  class="d-flex justify-content-center align-item-center">
+               <a href="#" class="icon-span   rounded-circle   d-flex   justify-content-center   align-item-center  ">
+                 <i class="fa-solid fa-arrow-right" style="color: #dde1e7;"></i>
+               </a>
+              </div> 
+  
+  
+            </div>
+          </div>
+          
+          
+          <!-- end of row  -->
+        </div>
+  
+      </div>
+    
+      <!-- VEDIO  -->
+      <div class="ratio ratio-16x9  shadow   mt-5">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bns4U8fitrA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+
+
+       <!-- service-section-2 -->
+  <section  class="service-section">
+    <div class="container  text-center  fw-bold  common-title  ">
+     <h2 class="common-heading">Achievement  <span  id="achiev-logo">  &#127881; </span>  <hr>
+     </h2>
+     
+     <!-- <hr class="w-25  mx-auto"> -->
+    
+    <!-- right-side -->
+    <div>
+      <a href="./gallery.html">
+
+        <button class="btn btn-primary me-md-2  mb-9" type="button">view all</button>
+      </a>
+   </div>
+
+ </div>
+</section>
+    
+     
+
+<!-- Acivements-section -->
+
+      <!-- Modal gallery -->
+<section class="">
+  <!-- Section: Images -->
+  <section class="">
+    <div class="row  mt-5">
+      <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+        <div
+          class="bg-image hover-overlay ripple shadow-1-strong rounded"
+          data-ripple-color="light"
+        >
+          <img
+            src="./image/achie-1.jpg"
+            style="height: 400px; width: 500px;"  
+          />
+          <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div
+          class="bg-image hover-overlay ripple shadow-1-strong rounded"
+          data-ripple-color="light"
+        >
+          <img
+            src="./image/achie-5.jpg"
+            class="w-100"
+          />
+          <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <div
+          class="bg-image hover-overlay ripple shadow-1-strong rounded"
+          data-ripple-color="light"
+        >
+          <img
+            src="./image/achie-3.jpg"
+            class="w-100"
+          />
+          <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+            <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Images -->
+
+  <!-- Section: Modals -->
+  <section class="">
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModal1Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/A3PDXmYoF5U"
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="text-center py-3">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 2 -->
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModal2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/wTcNtgA6gHs"
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="text-center py-3">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Modal 3 -->
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModal3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="ratio ratio-16x9">
+            <iframe
+              src="https://www.youtube.com/embed/vlDzYIIOYmM"
+              title="YouTube video"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="text-center py-3">
+            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Modals -->
+</section>
+<!-- Modal gallery -->
+    
+
+     <!-- footer-section  -->
+
+     <!-- Footer -->
+<footer class="bg-dark text-center text-white  mt-5">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/rahul.pal.9085790?mibextid=ZbWKwL" role="button"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      
+
+      <!-- Instagram -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/rahul.pal.9085790/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" role="button"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-linkedin-in"></i
+      ></a>
+
+      <!-- Github -->
+      <!-- <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+        ><i class="fab fa-github"></i
+      ></a> -->
+    </section>
+    <!-- Section: Social media -->
+
+    
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p>
+        "Cultivating Growth, Nurturing the Future."
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+   
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3  Copyright" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2023 Copyright:
+    <a class="text-white" href="./index.html">rahulbiotechseed.com</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+    
+    
+    <script  >
+      var nav = document.getElementById('navigation-bar');
+
+window.addEventListener('scroll', function () {
+  if (window.pageYOffset > 500) {
+    nav.classList.add('bg-dark', 'shadow');
+  } else {
+    nav.classList.remove('bg-dark', 'shadow');
+  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- counter  -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script  src="./jquery.counterup.min.js"></script>
+
+    <script>
+      jQuery(document).ready(function($){
+
+        $('.counter').counterUp({
+          delay: 10,
+         time: 1000,
+        });
+
+      });
+    </script>
+  </body>
+</html>
