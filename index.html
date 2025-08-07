@@ -4,21 +4,126 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title> TISSUE CULTURE  LABORATORY  </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <!-- jquery for counter  -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" > </script>
 
     <style>
-
       footer{
         height: 500px;
       }
       .Copyright{
         margin-top: 250px;
+      }
+      
+      /* Alert box styling */
+      .alert {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1040;
+        margin-bottom: 0;
+        border-radius: 0;
+        font-size: 14px;
+        padding: 8px 15px;
+      }
+      
+      /* Adjust body padding for fixed navbar and alert */
+      body {
+        padding-top: 120px; /* Space for alert + navbar */
+      }
+      
+      /* Navbar adjustments */
+      .navbar {
+        top: 50px; /* Position below alert box */
+        padding: 0.5rem 1rem;
+      }
+      
+      .navbar-brand img {
+        height: 60px !important;
+        width: auto;
+      }
+      
+      .navbar-shift {
+        margin-top: 0;
+      }
+      
+      /* Carousel adjustments */
+      .carousel {
+        width: 100%;
+        max-height: 600px; /* Increased from 400px */
+        overflow: hidden;
+        margin-top: 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Added shadow for better definition */
+      }
+      
+      .carousel-inner img {
+        width: 100%;
+        height: 600px; /* Increased from 400px */
+        object-fit: cover;
+        object-position: center;
+        image-rendering: -webkit-optimize-contrast; /* Better image quality */
+        image-rendering: crisp-edges;
+      }
+      
+      /* Ensure carousel indicators and controls are visible */
+      .carousel-indicators {
+        bottom: 20px;
+      }
+      
+      .carousel-control-prev,
+      .carousel-control-next {
+        width: 5%;
+        opacity: 0.8;
+      }
+      
+      .carousel-control-prev:hover,
+      .carousel-control-next:hover {
+        opacity: 1;
+      }
+      
+      @media (max-width: 768px) {
+        body {
+          padding-top: 100px; /* Reduced for mobile */
+        }
+        
+        .carousel {
+          max-height: 450px; /* Increased from 300px */
+        }
+        
+        .carousel-inner img {
+          height: 450px; /* Increased from 300px */
+        }
+        
+        .navbar-brand img {
+          height: 40px !important;
+        }
+      }
+      
+      /* Additional responsive adjustments */
+      @media (max-width: 576px) {
+        .carousel {
+          max-height: 350px;
+        }
+        
+        .carousel-inner img {
+          height: 350px;
+        }
+      }
+      
+      /* Ensure no horizontal overflow */
+      html, body {
+        overflow-x: hidden;
+        max-width: 100%;
+      }
+      
+      .container-fluid {
+        padding-left: 15px;
+        padding-right: 15px;
       }
     </style>
   </head>
@@ -33,54 +138,42 @@
         
     
     <!-- nav-bar start  -                   remove fixed top-->
-        <nav class="navbar  navbar-expand-lg   fixed-top  navbar-dark  p-md-3   d-lg-block   d-sm-none   d-md-none"  id="navigation-bar">
-          <div class="container-fluid  navbar-shift">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark shadow" id="navigation-bar">
+          <div class="container-fluid navbar-shift">
           
-            <a class="navbar-brand " href="./index.html">
-              <img src="./image/logo(4).png"
-                 />
+            <a class="navbar-brand" href="./index.html">
+              <img src="./image/logo(4).png" alt="Logo" />
             </a>
            
-          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
             
-            <ul class="nav justify-content-center  align-item-center" id="middle-menu">
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav mx-auto">
                 <!-- 1st -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Resources
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./blog.html">Recent Activitys</a></li>
-                  <li><a class="dropdown-item" href="./gallery.html">Gallary</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <!-- <li><a class="dropdown-item" href="#">labroutry</a></li> -->
-                </ul>
-              </li>
-            
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="./products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  products
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">kufri mohan</a></li>
-                  <li><a class="dropdown-item" href="#">kufri sohan</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">kufro rajan</a></li>
-                </ul>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link " aria-disabled="true" href="./products.html">Products</a>
-              </li>
-    
-              <li class="nav-item">
-                <a class="nav-link " aria-disabled="true" href="./about.html">About us</a>
-              </li>
-            </ul>
-            <!-- pre-end-menu -->
-            <a href="./contect.html">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Resources
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="./blog.html">Recent Activities</a></li>
+                    <li><a class="dropdown-item" href="./gallery.html">Gallery</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                  </ul>
+                </li>
               
-              <button type="button" class="btn btn-primary  btn-outline-light">contect us</button>
-            </a>
+                <li class="nav-item">
+                  <a class="nav-link" href="./products.html">Products</a>
+                </li>
+      
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">About us</a>
+                </li>
+              </ul>
+              <!-- Contact button -->
+              <a href="./contect.html" class="btn btn-outline-light btn-sm">Contact us</a>
+            </div>
 
             
           </div>
@@ -88,137 +181,22 @@
        
        
       <!-- nav-bar end -->
-           
-            <!-- side-bar -->
-            <!-- <div class="mobile-toggler  d-lg-none d-md-block  d-sm-block">
-               <a href="#"  data-bs-toggle="modal"  data-bs-target="#exampleModal">
-                <i class="fa-solid fa-bars"></i>
-               </a>
-            </div> -->
-
-              
-
-<!-- Modal -->
-<!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div> -->
-
- <!-- second-navbar-mobile navbar -->
- <nav class="navbar bg-body-tertiary bg-dark  d-lg-none d-md-block  d-sm-block">
-  <div class="container">
-     <!-- logo -->
-     <a class="logo" href="./index.html">
-      <img src="./image/logo(4).png"
-        height="100px" />
-    </a>
-     <!-- side-bar -->
-            <div class="mobile-toggler  d-lg-none d-md-block  d-sm-block">
-               <a href="#" id="side-bars" data-bs-toggle="modal"  data-bs-target="#exampleModal">
-                <i class="fa-solid fa-bars"></i>
-               </a>
-            </div>
-
-       <!-- Modal -->
- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Menu</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-         <!-- insde- content  -->
-         <li class="nav-item">
-          
-         <a class="nav-link " aria-disabled="true" href="./index.html">
-           <i class="fa-solid fa-house"> </i> Home
-         </a>
-        
-        </li>
-       
-       
-         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            <i class="fa-solid fa-clipboard"></i>  Resources
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="./blog.html">Recent Activity </a></li>
-            <li><a class="dropdown-item" href="./gallery.html">Gallary</a></li>
-            
-          </ul>
-        </li>
-
-       
-
-        <li class="nav-item">
-          <a class="nav-link " aria-disabled="true" href="./products.html">
-            <i class="fa-solid fa-cart-shopping" ></i> Products</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " aria-disabled="true" href="./about.html">
-            <i class="fa-solid fa-user"></i> About us</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link " aria-disabled="true" href="./contect.html">
-            <i class="fa-solid fa-user"></i> Contect us</a>
-        </li>
-
-
-
-      </div>
-      <div class="mobile-modal-footer">
-       <a href="https://www.facebook.com/rahul.pal.9085790?mibextid=ZbWKwL" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-       <a href="https://instagram.com/rahul.pal.9085790?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-       <a href="https://youtu.be/WrjufoWbLSQ" target="_blank"><i class="fa-brands fa-youtube"></i></a>
-       <a href="#" target="_blank"><i class="fa-solid fa-truck-fast"></i></a>
-        
-        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-
-      </div>
-    </div>
-  </div>
-</div>    
-
-  </div>
-</nav>
-          
-
-
-
-        
-   
 
    <!-- crousel-start -->
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="margin-left: -200px;">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         
         <div class="carousel-item active">
-          <img src="./image/rahul-6.png" class="d-block w-100" alt="...">
+          <img src="./image/gemini3.png" class="d-block w-100" alt="Tissue Culture Laboratory">
         </div>
         <div class="carousel-item">
-          <img src="./image/Rahul-2.png" class="d-block w-100" alt="...">
+          <img src="./image/gemini1.png" class="d-block w-100" alt="Agricultural Products">
         </div>
         <div class="carousel-item">
-          <img src="./image/rahul-10.png" class="d-block w-100" alt="...">
+          <img src="./image/gemini2.png" class="d-block w-100" alt="Potato Seeds">
         </div>
         <div class="carousel-item">
-          <img src="./image/showProducts.jpg" class="d-block w-100" alt="...">
+          <img src="./image/gemini4.png" class="d-block w-100" alt="Product Display">
         </div>
         
       </div>
@@ -231,8 +209,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    
-    
 
     <!-- crausel-end -->
 
@@ -325,7 +301,7 @@
     
 
 
-      <!-- swing animated  counter -->
+      <!-- swing animated  counter
        <section class=" section  sectio-work-data " style="background-color: black; color: white;">
          <div class=" animated-counter">
            
@@ -358,11 +334,11 @@
      
 
    </div>
- </section>
+ </section> -->
 
 
     <!-- quotes/founder  -->
-    <div class="card mb-3  shadow" style="max-width: 100%; " >
+    <!-- <div class="card mb-3  shadow" style="max-width: 100%; " >
       <div class="row g-0     " id="founder-main">
         <div class="col-md-6    col-sm-8"  id="founder-margin-img">
           <img src="./image/founder-img-removebg-preview (1).png" class="img-fluid rounded-start" style="margin-left: 20rem;">
@@ -375,7 +351,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
 
   <!-- service-section-2 -->
@@ -516,7 +492,7 @@
             src="./image/achie-1.jpg"
             style="height: 400px; width: 500px;"  
           />
-          <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal1">
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal1">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
           </a>
         </div>
@@ -531,7 +507,7 @@
             src="./image/achie-5.jpg"
             class="w-100"
           />
-          <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal2">
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal2">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
           </a>
         </div>
@@ -546,7 +522,7 @@
             src="./image/achie-3.jpg"
             class="w-100"
           />
-          <a href="#!" data-mdb-toggle="modal" data-mdb-target="#exampleModal3">
+          <a href="#!" data-bs-toggle="modal" data-bs-target="#exampleModal3">
             <div class="mask" style="background-color: rgba(251, 251, 251, 0.2);"></div>
           </a>
         </div>
@@ -576,7 +552,7 @@
           </div>
 
           <div class="text-center py-3">
-            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
               Close
             </button>
           </div>
@@ -628,7 +604,7 @@
           </div>
 
           <div class="text-center py-3">
-            <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
               Close
             </button>
           </div>
@@ -694,38 +670,26 @@
   <!-- Copyright -->
   <div class="text-center p-3  Copyright" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2023 Copyright:
-    <a class="text-white" href="./index.html">rahulbiotechseed.com</a>
+    <span class="text-white">Rahul Biotech Seed . All rights reserved</span>
   </div>
   <!-- Copyright -->
 </footer>
 <!-- Footer -->
     
     
-    <script  >
+    <script>
       var nav = document.getElementById('navigation-bar');
 
-window.addEventListener('scroll', function () {
-  if (window.pageYOffset > 500) {
-    nav.classList.add('bg-dark', 'shadow');
-  } else {
-    nav.classList.remove('bg-dark', 'shadow');
-  }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
-});
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    <!-- counter  -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script  src="./jquery.counterup.min.js"></script>
-
-    <script>
-      jQuery(document).ready(function($){
-
-        $('.counter').counterUp({
-          delay: 10,
-         time: 1000,
-        });
-
+      window.addEventListener('scroll', function () {
+        if (window.pageYOffset > 500) {
+          nav.classList.add('shadow');
+        } else {
+          nav.classList.remove('shadow');
+        }
       });
     </script>
+    
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
