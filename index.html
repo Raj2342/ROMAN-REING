@@ -160,6 +160,54 @@
         padding-left: 15px;
         padding-right: 15px;
       }
+      
+      /* Service section button fixes */
+      .service-section .common-title {
+        position: relative;
+      }
+      
+      .service-section .common-title > div {
+        text-align: center;
+        margin-top: 1rem;
+      }
+      
+      .service-section .btn {
+        margin-bottom: 1rem;
+      }
+      
+      /* Mobile responsive fixes for service section buttons */
+      @media (max-width: 768px) {
+        .service-section .common-title > div {
+          text-align: center;
+          margin-top: 0.5rem;
+        }
+        
+        .service-section .btn {
+          font-size: 14px;
+          padding: 8px 16px;
+          margin-bottom: 0.5rem;
+        }
+        
+        .mb-9 {
+          margin-bottom: 1rem !important;
+        }
+      }
+      
+      @media (max-width: 576px) {
+        .service-section .common-title > div {
+          text-align: center;
+          margin-top: 0.5rem;
+          width: 100%;
+        }
+        
+        .service-section .btn {
+          font-size: 12px;
+          padding: 6px 12px;
+          margin-bottom: 0.5rem;
+          width: auto;
+          display: inline-block;
+        }
+      }
     </style>
   </head>
   <body>
@@ -257,9 +305,9 @@
           </h2>
          
          <!-- right-side -->
-         <div>
+         <div class="text-center mt-3">
           <a href="./products.html">
-         <button class="btn btn-primary me-md-2 mb-3" type="button">view all</button>
+         <button class="btn btn-primary" type="button">view all</button>
          </a>
         </div>
 
@@ -393,13 +441,10 @@
      <h2 class="common-heading">THE LATEST <hr>
      </h2>
      
-     <!-- <hr class="w-25  mx-auto"> -->
-    
     <!-- right-side -->
-    <div>
+    <div class="text-center mt-3">
       <a href="./blog.html">
-
-        <button class="btn btn-primary me-md-2  mb-9" type="button">view all</button>
+        <button class="btn btn-primary" type="button">view all</button>
       </a>
    </div>
 
@@ -494,13 +539,10 @@
      <h2 class="common-heading">Achievement  <span  id="achiev-logo">  &#127881; </span>  <hr>
      </h2>
      
-     <!-- <hr class="w-25  mx-auto"> -->
-    
     <!-- right-side -->
-    <div>
+    <div class="text-center mt-3">
       <a href="./gallery.html">
-
-        <button class="btn btn-primary me-md-2  mb-9" type="button">view all</button>
+        <button class="btn btn-primary" type="button">view all</button>
       </a>
    </div>
 
