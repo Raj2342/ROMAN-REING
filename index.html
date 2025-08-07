@@ -166,46 +166,68 @@
         position: relative;
       }
       
+      /* Enhanced Service section button styling for better visibility */
+      .service-section .btn {
+        background-color: #0d6efd;
+        border: 2px solid #0d6efd;
+        color: white;
+        font-weight: 600;
+        padding: 12px 24px;
+        font-size: 16px;
+        border-radius: 25px;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 8px rgba(13, 110, 253, 0.3);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      
+      .service-section .btn:hover {
+        background-color: #0b5ed7;
+        border-color: #0b5ed7;
+        transform: translateY(-2px);
+        box-shadow: 0 6px 12px rgba(13, 110, 253, 0.4);
+      }
+      
       .service-section .common-title > div {
         text-align: center;
-        margin-top: 1rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
       }
       
-      .service-section .btn {
-        margin-bottom: 1rem;
-      }
-      
-      /* Mobile responsive fixes for service section buttons */
+      /* Mobile responsive fixes for enhanced buttons */
       @media (max-width: 768px) {
-        .service-section .common-title > div {
-          text-align: center;
-          margin-top: 0.5rem;
-        }
-        
         .service-section .btn {
           font-size: 14px;
-          padding: 8px 16px;
-          margin-bottom: 0.5rem;
+          padding: 10px 20px;
+          font-weight: 600;
+          border-radius: 20px;
         }
         
-        .mb-9 {
-          margin-bottom: 1rem !important;
+        .service-section .common-title > div {
+          margin-top: 1rem;
+          margin-bottom: 1.5rem;
         }
       }
       
       @media (max-width: 576px) {
-        .service-section .common-title > div {
-          text-align: center;
-          margin-top: 0.5rem;
-          width: 100%;
+        .service-section .btn {
+          font-size: 13px;
+          padding: 8px 18px;
+          border-radius: 18px;
+          min-width: 120px;
         }
         
+        .service-section .common-title > div {
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+        }
+      }
+      
+      @media (max-width: 400px) {
         .service-section .btn {
           font-size: 12px;
-          padding: 6px 12px;
-          margin-bottom: 0.5rem;
-          width: auto;
-          display: inline-block;
+          padding: 8px 16px;
+          min-width: 100px;
         }
       }
     </style>
@@ -304,10 +326,10 @@
             <hr>
           </h2>
          
-         <!-- right-side -->
-         <div class="text-center mt-3">
-          <a href="./products.html">
-         <button class="btn btn-primary" type="button">view all</button>
+         <!-- Enhanced button container -->
+         <div class="text-center mt-4 mb-3">
+          <a href="./products.html" class="text-decoration-none">
+         <button class="btn btn-primary view-all-btn" type="button">View All</button>
          </a>
         </div>
 
@@ -441,10 +463,10 @@
      <h2 class="common-heading">THE LATEST <hr>
      </h2>
      
-    <!-- right-side -->
-    <div class="text-center mt-3">
-      <a href="./blog.html">
-        <button class="btn btn-primary" type="button">view all</button>
+    <!-- Enhanced button container -->
+    <div class="text-center mt-4 mb-3">
+      <a href="./blog.html" class="text-decoration-none">
+        <button class="btn btn-primary view-all-btn" type="button">View All</button>
       </a>
    </div>
 
