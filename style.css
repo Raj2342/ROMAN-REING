@@ -41,9 +41,9 @@
 }
 .common-title {
     margin-top: 5rem;
-    display: flex;
-    margin-left: 600px;
-    gap: 30%;
+    display: block;
+    margin-left: 0;
+    gap: 0;
 }
 
 .icon-span{
@@ -213,10 +213,10 @@
         letter-spacing: 0.01rem;
     }
     .common-title {
-        margin-top: 5rem;
-        display: flex;
-        margin-left: 200px;
-        gap: 10%;
+        margin-top: 2rem;
+        display: block;
+        margin-left: 0;
+        gap: 0;
     }
     /* acheivemnet-logo */
     #achiev-logo{
