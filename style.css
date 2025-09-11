@@ -125,9 +125,7 @@
 
 /* hiding navbar  */
 @media screen and  (max-width:990px) {
-    #navigation-bar {
-        display: none;
-    }
+    /* Removed display:none for #navigation-bar to ensure navbar is always visible */
     .modal-dialog{
         width: 300px;
     }
