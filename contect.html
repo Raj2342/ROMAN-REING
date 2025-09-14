@@ -10,6 +10,29 @@
           height: 100px;
           width: 100px;
         }
+       @media (max-width: 768px) {
+         .row {
+           flex-direction: column;
+         }
+         .col-6 {
+           width: 100%;
+           max-width: 100%;
+           margin-bottom: 2rem;
+         }
+         #map-container-google-1 {
+           height: 250px !important;
+         }
+         iframe {
+           width: 100% !important;
+           height: 200px !important;
+         }
+         h1 {
+           font-size: 1.5rem;
+         }
+         .container {
+           padding: 0 0.5rem;
+         }
+       }
     </style>
  
   </head>
@@ -62,36 +85,29 @@
 
    
     <div class="container text-center">
-       
-        <div class="row">
-            <!-- left-side -->
-            <div class="col-6">
-             <pre>
-                <h1>General inquiries   </h1>
-                <p > &#128222;   9198516750 / 9795516750 / 9721746016 </p>
-                <p > &#128231;   Rahul.pal45@gmail.com</p>
-            
-             </pre>
-             <h1> our location   </h1>
-             <address>
-               Singhirampur
-                Distt. Farrukhabad -,
-                 Uttar Pradesh, India.
-             </address>
-            </div>
-          
-            
-            <!-- right-side -->
-          <div class="col-6 mt-5">
-           <!--Google map-->
-<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16840.740201262073!2d79.67360493115395!3d27.225613073226896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399e3e94e7941993%3A0xadd26517feb34b85!2sSinghirampur%2C%20Uttar%20Pradesh%20209724!5e0!3m2!1sen!2sin!4v1690964957416!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-  
-  <!--Google Maps-->
+      <div class="row">
+        <!-- left-side -->
+        <div class="col-6">
+          <h1>General inquiries</h1>
+          <p> &#128222; 9198516750 / 9795516750 / 9721746016 </p>
+          <p> &#128231; Rahul.pal45@gmail.com</p>
+          <h1>Our location</h1>
+          <address>
+            Singhirampur<br>
+            Distt. Farrukhabad,<br>
+            Uttar Pradesh, India.
+          </address>
+        </div>
+        <!-- right-side -->
+        <div class="col-6 mt-5 mt-md-0">
+          <!--Google map-->
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16840.740201262073!2d79.67360493115395!3d27.225613073226896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399e3e94e7941993%3A0xadd26517feb34b85!2sSinghirampur%2C%20Uttar%20Pradesh%20209724!5e0!3m2!1sen!2sin!4v1690964957416!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
+          <!--Google Maps-->
         </div>
       </div>
+    </div>
 
 
 
